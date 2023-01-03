@@ -1,0 +1,11 @@
+
+def operation(productType):
+   def operation(number):
+      return number * productType
+   return operation
+
+quadruple = operation(4)
+triples = operation(3)
+
+for num in [1,2,3,4,5]:
+   print (triples(num))
